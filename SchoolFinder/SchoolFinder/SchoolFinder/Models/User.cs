@@ -8,6 +8,8 @@ namespace SchoolFinder.Models
     class User
     {
         [PrimaryKey, AutoIncrement]
+        
+        public int ID { get; set; }
 
         public string Username { get; set; }
 

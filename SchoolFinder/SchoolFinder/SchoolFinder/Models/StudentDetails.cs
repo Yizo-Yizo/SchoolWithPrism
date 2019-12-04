@@ -8,6 +8,9 @@ namespace SchoolFinder.Models
     class StudentDetails
     {
         [PrimaryKey, AutoIncrement]
+
+        public int ID { get; set; }
+
         public string NameOfApplicant { get; set; }
 
         public string Surname { get; set; }
@@ -20,6 +23,7 @@ namespace SchoolFinder.Models
 
         public string Address { get; set; }
 
+        [MaxLength(10)]
         public int ParentsPhoneNO { get; set; }
     }
 }

@@ -8,13 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SchoolFinder.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::SchoolFinder.Views.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SchoolFinder.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::SchoolFinder.MainPage))]
 
-namespace SchoolFinder.Views {
+namespace SchoolFinder {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MainPage.xaml")]
-    public partial class MainPage : global::Xamarin.Forms.ContentPage {
+    public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

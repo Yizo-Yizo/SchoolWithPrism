@@ -23,13 +23,19 @@ namespace SchoolFinder
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/SignUpPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<ContactPage, ContactPageViewModel>();
+            containerRegistry.RegisterForNavigation<ApplicationStatusPage, ApplicationStatusPageViewModel>();
+            containerRegistry.RegisterForNavigation<ApplicationFormPage, ApplicationFormPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
+            containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
+            containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
         }
     }
 }
