@@ -7,7 +7,8 @@ using Xamarin.Forms;
 
 namespace SchoolFinder.Views
 {
-    public partial class MainPage : ContentPage
+    
+    public partial class MainPage : TabbedPage
     {
         public MainPage()
         {

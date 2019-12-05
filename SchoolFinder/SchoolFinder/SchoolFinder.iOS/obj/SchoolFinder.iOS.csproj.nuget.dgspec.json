@@ -10,7 +10,7 @@
         "projectUniqueName": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\SchoolFinder.iOS.csproj",
         "projectName": "SchoolFinder.iOS",
         "projectPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\SchoolFinder.iOS.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Thapelo.Selebedi\\.nuget\\packages\\",
         "outputPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
@@ -18,7 +18,7 @@
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thapelo.Selebedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,14 +71,15 @@
         "projectUniqueName": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder\\SchoolFinder.csproj",
         "projectName": "SchoolFinder",
         "projectPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder\\SchoolFinder.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Thapelo.Selebedi\\.nuget\\packages\\",
         "outputPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thapelo.Selebedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -103,6 +104,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SchoolFinder.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::SchoolFinder.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SchoolFinder.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::SchoolFinder.Views.MainPage))]
 
-namespace SchoolFinder {
+namespace SchoolFinder.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MainPage.xaml")]
