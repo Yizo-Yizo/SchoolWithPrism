@@ -122,6 +122,14 @@
               "target": "Package",
               "version": "[7.2.0.1367, )"
             },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
+            },
+            "SharpFont": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[3.6.0.344457, )"

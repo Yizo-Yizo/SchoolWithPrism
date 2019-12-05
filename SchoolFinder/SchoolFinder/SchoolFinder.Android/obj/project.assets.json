@@ -351,6 +351,15 @@
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
         }
       },
+      "RestSharp/106.6.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -385,6 +394,18 @@
             "rid": "win-x86"
           }
         }
+      },
+      "SharpFont/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpFont.Dependencies": "(, )"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "SharpFont.Dependencies/2.5.5": {
+        "type": "package"
       },
       "sqlite-net-pcl/1.6.292": {
         "type": "package",
@@ -1441,6 +1462,8 @@
           "Microsoft.EntityFrameworkCore.InMemory": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Prism.Unity.Forms": "7.2.0.1367",
+          "RestSharp": "106.6.10",
+          "SharpFont": "4.0.1",
           "Xamarin.Forms": "3.6.0.344457",
           "sqlite-net-pcl": "1.6.292"
         },
@@ -1940,6 +1963,21 @@
         "prism.unity.forms.nuspec"
       ]
     },
+    "RestSharp/106.6.10": {
+      "sha512": "x1FM32hjnVOIn+DKtCs2Y4Q2DCUE5KW08NUXUd4GjgKjE+5PE0F6e9XfUg7nILo05M0TA/HRkRD/SeQ8+duOUA==",
+      "type": "package",
+      "path": "restsharp/106.6.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.6.10.nupkg.sha512",
+        "restsharp.nuspec"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
       "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
       "type": "package",
@@ -2001,6 +2039,41 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SharpFont/4.0.1": {
+      "sha512": "yoFLcuWMYdBGB4YLq3bvzrctItJIb+EuK7C7PGgBzqsKxx5UXUwTce64kbvuDQWlMf6p4uQwDm5t2rQdZ9EkyA==",
+      "type": "package",
+      "path": "sharpfont/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/SharpFont.props",
+        "config/SharpFont.dll.config",
+        "lib/net45/SharpFont.dll",
+        "lib/net45/SharpFont.dll.config",
+        "lib/net45/SharpFont.xml",
+        "sharpfont.4.0.1.nupkg.sha512",
+        "sharpfont.nuspec"
+      ]
+    },
+    "SharpFont.Dependencies/2.5.5": {
+      "sha512": "QlGhaq7pL90m2PNkP+YRaFR+wQsDULxOo3kFUUm/jaf6Ym++jCR2R78oMtKqzVjjCjm1Skwy3k1jYC0mx7/lXw==",
+      "type": "package",
+      "path": "sharpfont.dependencies/2.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bin/msvc10/x64/freetype6.dll",
+        "bin/msvc10/x86/freetype6.dll",
+        "bin/msvc11/x64/freetype6.dll",
+        "bin/msvc11/x86/freetype6.dll",
+        "bin/msvc12/x64/freetype6.dll",
+        "bin/msvc12/x86/freetype6.dll",
+        "bin/msvc9/x64/freetype6.dll",
+        "bin/msvc9/x86/freetype6.dll",
+        "sharpfont.dependencies.2.5.5.nupkg.sha512",
+        "sharpfont.dependencies.nuspec"
       ]
     },
     "sqlite-net-pcl/1.6.292": {
@@ -3675,5 +3748,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1602",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "SharpFont 4.0.1 does not provide an inclusive lower bound for dependency SharpFont.Dependencies. An approximate best match of SharpFont.Dependencies 2.5.5 was resolved.",
+      "libraryId": "SharpFont.Dependencies",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    }
+  ]
 }
