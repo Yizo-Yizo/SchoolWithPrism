@@ -30,9 +30,9 @@ namespace WebAPI.Controllers
         // GET: api/StudentDetails/5
         [HttpGet]
         [Route("api/UserCredentials/email={email}/password={password}")]
-        public async Task<IHttpActionResult> UserDetailsLogin(string email, string password)
+        public async Task<ActionResult<User>> UserDetailsLogin(string email, string password)
         {
-            User login = await db.Users.Where(x => x.Email == email && x.Password == password).SingleOrDefaultAsync();
+            User login = await _context.Users.Where(x => x.Email == email && x.Password == password).SingleOrDefaultAsync();
             if (login == null)
             {
                 return NotFound();

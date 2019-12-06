@@ -3,13 +3,9 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.Bcl.HashCode.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.CSharp.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.Data.SqlClient.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.Extensions.Caching.Memory.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -38,12 +34,9 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Core.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Diagnostics.DiagnosticSource.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.IdentityModel.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Memory.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Net.Http.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Runtime.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Runtime.Serialization.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Xml.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Xml.Linq.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Unity.Abstractions.dll
@@ -99,6 +92,9 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.IO.Compression.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.IO.Compression.FileSystem.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Net.Http.dll
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Runtime.Serialization.dll
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.ServiceModel.Internals.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Web.Services.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Threading.Tasks.Extensions.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.ComponentModel.Annotations.dll
@@ -118,4 +114,3 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Diagnostics.Tracing.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Collections.Concurrent.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\Mono.Security.dll
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.ServiceModel.Internals.dll

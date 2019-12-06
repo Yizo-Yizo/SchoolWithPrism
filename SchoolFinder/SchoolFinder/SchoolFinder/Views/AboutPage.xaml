@@ -3,17 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.AboutPage" Title="{Binding Title}">
+             x:Class="SchoolFinder.Views.AboutPage" Title="About">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+        <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
 
         <StackLayout>
 
-            <Button x:Name="Apply_Here" Text="Apply Here" Command="{Binding }" />
+            <Button Text="Apply Here" Command="{Binding NavigateCommand}" />
         </StackLayout>
     </ContentPage.Content>
 

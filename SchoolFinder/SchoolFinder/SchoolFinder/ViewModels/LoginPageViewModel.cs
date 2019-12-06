@@ -15,34 +15,33 @@ namespace SchoolFinder.ViewModels
     {
         private IDatabase _database;
 
+        private DelegateCommand _loginCommand;
         private DelegateCommand LoginCommand =>
             _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
 
-        public LoginPageViewModel(IPageDialogService dialogService)
+        public LoginPageViewModel(INavigationService navigation, IPageDialogService pageDialogService) : base(navigation, pageDialogService)
         {
-            _dialogService = dialogService;
+            
         }
 
-       
-
-            Email.ReturnCommand = new Command(() => Email.Focus());
-            Entry_Second.ReturnCommand = new Command(() => Entry_Third.Focus());
+        public Command Email { get; set; }
+        public Command Password { get; set; }
         
         private async void ExecuteLoginCommand()
         {
             LoginService service = new LoginService();
-            var getLoginDetails = await service.CheckLoginIfExists(Email.Focus, Pass.Focus);
+            var getLoginDetails = await service.CheckLoginIfExists(Email, Password);
             if (getLoginDetails)
             {
-                 await _dialogService.DisplayAlert("Login Successfull", "Username or Password is correct", "Okay", "Cancel");
+                 await PageDialogService.DisplayAlertAsync("Login Successfull", "Username or Password is correct", "Okay", "Cancel");
             }
-            else if (Email.Focus == null && Pass.Focus == null)
+            else if (Email == null && Password == null)
             {
-                await _dialogService.DisplayAlert("Login failed", "Enter your Email and Password before login", "Okay", "Cancel");
+                await PageDialogService.DisplayAlertAsync("Login failed", "Enter your Email and Password before login", "Okay", "Cancel");
             }
             else
             {
-                await _dialogService.DisplayAlert("Login failed", "Username or Password is incorrect or not exists", "Okay", "Cancel");
+                await PageDialogService.DisplayAlertAsync("Login failed", "Username or Password is incorrect or not exists", "Okay", "Cancel");
             }
         }
     }
