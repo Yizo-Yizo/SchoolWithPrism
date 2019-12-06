@@ -28,17 +28,16 @@ namespace WebAPI.Controllers
         }
 
         // GET: api/StudentDetails/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<StudentDetails>> GetStudentDetails(int id)
+        [HttpGet]
+        [Route("api/UserCredentials/email={email}/password={password}")]
+        public async Task<IHttpActionResult> UserDetailsLogin(string email, string password)
         {
-            var studentDetails = await _context.StudentsDetails.FindAsync(id);
-
-            if (studentDetails == null)
+            User login = await db.Users.Where(x => x.Email == email && x.Password == password).SingleOrDefaultAsync();
+            if (login == null)
             {
                 return NotFound();
             }
-
-            return studentDetails;
+            return Ok(login);
         }
 
         // PUT: api/StudentDetails/5
