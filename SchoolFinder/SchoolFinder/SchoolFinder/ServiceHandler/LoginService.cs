@@ -1,5 +1,5 @@
-﻿using RestSharp;
-using SchoolFinder.Models;
+﻿using SchoolFinder.Models;
+using SchoolFinder.RestApiClass;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +9,7 @@ namespace SchoolFinder.ServiceHandler
 {
     class LoginService
     {
-        RestClient<User> restClient = new RestClient<User>();
+        RestClient<User> _restClient = new RestClient<User>();
         public async Task<bool> CheckLoginIfExists(string email, string password)
         {
             var check = await _restClient.checkLogin(email, password);
