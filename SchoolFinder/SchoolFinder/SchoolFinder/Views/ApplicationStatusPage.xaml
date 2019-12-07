@@ -4,5 +4,9 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SchoolFinder.Views.ApplicationStatusPage">
-  
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
+    </ContentPage.ToolbarItems>
+
 </ContentPage>

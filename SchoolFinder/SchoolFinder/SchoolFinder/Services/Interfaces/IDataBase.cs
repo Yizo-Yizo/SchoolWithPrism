@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SchoolFinder.Models;
+using System.Threading.Tasks;
 
-namespace SchoolFinder.Services.Interfaces
+namespace SchoolFinder.Service.Interfaces
 {
-    class IDataBase
+    public interface IDatabase
     {
+        Task<int> SaveStudentDetails(StudentDetails studentDetails);
     }
 }

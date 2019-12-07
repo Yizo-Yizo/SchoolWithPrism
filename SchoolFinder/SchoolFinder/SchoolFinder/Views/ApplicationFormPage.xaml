@@ -4,5 +4,54 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SchoolFinder.Views.ApplicationFormPage">
-  
+
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <ScrollView VerticalOptions="FillAndExpand" Margin="10">
+                <StackLayout>
+
+
+                    <Label
+              FontSize="15"
+              FontAttributes="Bold"
+              HorizontalOptions="Center"
+               TextColor="DarkGreen"/>
+                    
+                    <Label Text="Name of Applicant" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Editor Placeholder="Enter Name" Text="{Binding NameOfApplicant}" />
+
+                    <Label Text="Name of Applicant" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Editor Placeholder="Enter Last Name" Text="{Binding LastName}" />
+
+                    <Label Text="Name of Parent" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Editor Placeholder="Enter Name" Text="{Binding NameOfParent}" />
+
+                    <Label Text="Date of Birth" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <DatePicker Format="D"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="10, 0" Date="{Binding DateOfBirth}" />
+
+                    <Label Text="Gender" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Picker x:Name="Gender" SelectedIndex="{Binding Gender}" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Home Address" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Editor Placeholder="Enter Address" Text="{Binding Address}" />
+
+                    <Label Text="Parents Phone Number" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Editor Placeholder="Enter Phone Number" Text="{Binding NameOfParent}" />
+
+                    <Button Text="Save" Command="{Binding ExecuteSaveCommand}" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15"/>
+
+                    <Button Text="Cancel" Clicked="OnCancelClicked"  BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15" />
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

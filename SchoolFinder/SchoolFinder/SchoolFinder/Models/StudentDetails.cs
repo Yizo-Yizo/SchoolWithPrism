@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SchoolFinder.Models
 {
-    class StudentDetails
+   public class StudentDetails
     {
         [PrimaryKey, AutoIncrement]
 
@@ -13,7 +13,7 @@ namespace SchoolFinder.Models
 
         public string NameOfApplicant { get; set; }
 
-        public string Surname { get; set; }
+        public string LastName { get; set; }
 
         public string NameOfParent { get; set; }
 

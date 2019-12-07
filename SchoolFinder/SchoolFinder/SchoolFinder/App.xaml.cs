@@ -36,6 +36,8 @@ namespace SchoolFinder
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
             containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
+            containerRegistry.RegisterSingleton<IDatabase, StudentssDatabase>();
+
         }
     }
 }

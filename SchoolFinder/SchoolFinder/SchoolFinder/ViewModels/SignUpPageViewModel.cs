@@ -32,7 +32,7 @@ namespace SchoolFinder.ViewModels
         
         
 
-        private async void SignUpCommand()
+        private async void ExecuteSignUpCommand()
         {
             LoginService service = new LoginService();
             var getLoginDetails = await service.CheckLoginIfExists(Email, Password);

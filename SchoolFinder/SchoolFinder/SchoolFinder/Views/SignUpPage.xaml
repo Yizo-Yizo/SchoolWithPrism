@@ -4,5 +4,20 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SchoolFinder.Views.SignUpPage">
-  
+  <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="First Name" />
+            <Entry  Placeholder="Enter First Name" Text="{Binding FirstName}" />
+            <Label Text="Last Name" />
+            <Entry  Placeholder="Enter Last Name" Text="{Binding LastName}" />
+            <Label Text="Email" />
+            <Entry  Placeholder="Enter Email" Text="{Binding Email}" />
+            <Label Text="Password" />
+            <Entry Placeholder="Enter Password" Text="{Binding Password}" />
+            <Label Text="Confirm Password" />
+            <Entry Placeholder="Confirm Password" Text="{Binding ConfirmPassword}" />
+            <Button Text="Sign Up" Command="{Binding ExecuteLoginCommand}" />
+            <Label x:Name="messageLabel" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -22,6 +22,12 @@ namespace SchoolFinder.ViewModels
             NavigationService = navigationService;
             PageDialogService = pageDialogService;
         }
+
+        public ViewModelBase(INavigationService navigationService)
+        {
+            NavigationService = navigationService;
+        }
+
         public virtual void Initialize(INavigationParameters parameters)
         {
         }

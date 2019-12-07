@@ -9,10 +9,9 @@ namespace SchoolFinder.RestApiClass
     class RestClient<T>
     {
            
-    private
-    const string MainWebServiceUrl = "";
-        private
-    const string LoginWebServiceUrl = "";
+    private const string MainWebServiceUrl = "http: //localhost:44349/";
+    private const string LoginWebServiceUrl = "http: //localhost:44349/api/UserCredentials";
+
         public async Task<bool> checkLogin(string email, string password)
         {
             var httpClient = new HttpClient();
