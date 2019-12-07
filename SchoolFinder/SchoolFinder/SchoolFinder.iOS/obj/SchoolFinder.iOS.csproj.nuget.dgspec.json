@@ -10,7 +10,7 @@
         "projectUniqueName": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\SchoolFinder.iOS.csproj",
         "projectName": "SchoolFinder.iOS",
         "projectPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\SchoolFinder.iOS.csproj",
-        "packagesPath": "C:\\Users\\Thapelo.Selebedi\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
@@ -18,7 +18,7 @@
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thapelo.Selebedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,15 +71,14 @@
         "projectUniqueName": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder\\SchoolFinder.csproj",
         "projectName": "SchoolFinder",
         "projectPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder\\SchoolFinder.csproj",
-        "packagesPath": "C:\\Users\\Thapelo.Selebedi\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thapelo.Selebedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -137,7 +136,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
