@@ -11,11 +11,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using SchoolFinder.Service.Interfaces;
-using IDatabase = SchoolFinder.Service.Interfaces.IDatabase;
+using IDataBase = SchoolFinder.Service.Interfaces.IDataBase;
 
 namespace SchoolFinder.Service
 {
-    internal class StudentsDatabase : IDatabase
+    internal class StudentsDatabase : IDataBase
     {
         private SQLiteAsyncConnection database;
 

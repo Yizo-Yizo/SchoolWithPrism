@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace SchoolFinder.Service.Interfaces
 {
-    public interface IDatabase
+    public interface IDataBase
     {
         Task<int> SaveStudentDetails(StudentDetails studentDetails);
     }
