@@ -9,10 +9,11 @@
     ".NETStandard,Version=v2.0/": {
       "SchoolFinder/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.0",
+          "Microsoft.EntityFrameworkCore": "3.1.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Unity.Forms": "7.2.0.1422",
+          "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991221",
           "sqlite-net-pcl": "1.6.292"
         },
@@ -68,17 +69,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.0": {},
-      "Microsoft.EntityFrameworkCore.InMemory/3.1.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.19.56505"
-          }
-        }
-      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.0"
@@ -330,7 +320,7 @@
       "System.Memory/4.5.3": {
         "dependencies": {
           "System.Buffers": "4.4.0",
-          "System.Numerics.Vectors": "4.4.0",
+          "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
         },
         "runtime": {
@@ -340,11 +330,11 @@
           }
         }
       },
-      "System.Numerics.Vectors/4.4.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {
-            "assemblyVersion": "4.1.3.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -387,6 +377,17 @@
           "lib/netstandard2.0/Unity.Container.dll": {
             "assemblyVersion": "5.11.1.0",
             "fileVersion": "5.11.1.0"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.3.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -448,13 +449,6 @@
       "sha512": "sha512-Shqqf6MFaIkcuR6dMEBzvG0LMJMoKKMx+k14nUax98vv33i3AUUGxKF9VfJt7VsjOA3xu+KOdzCW8YJ2KLoRIA==",
       "path": "microsoft.entityframeworkcore.analyzers/3.1.0",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.0.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/3.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IMinH4BdgJaom5klQVjllAeT4w6Ke7WrE1CBvos5D+usNJIZW8fD1L+BG4VrGf9s8zvF9gB5JU8DHZL6ndOgaw==",
-      "path": "microsoft.entityframeworkcore.inmemory/3.1.0",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.3.1.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.0": {
       "type": "package",
@@ -631,12 +625,12 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
-    "System.Numerics.Vectors/4.4.0": {
+    "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
-      "path": "system.numerics.vectors/4.4.0",
-      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/4.7.0": {
       "type": "package",
@@ -665,6 +659,13 @@
       "sha512": "sha512-pxeataMa9MB/ilLNcmy5OUrcvA2OnPMuMCTsw+zGgRPWx1oxkq6ap5bI+59htjAPe9awPDIU3YVk+yH0sfcOWQ==",
       "path": "unity.container/5.11.1",
       "hashPath": "unity.container.5.11.1.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
+      "path": "xamarin.essentials/1.3.1",
+      "hashPath": "xamarin.essentials.1.3.1.nupkg.sha512"
     },
     "Xamarin.Forms/4.3.0.991221": {
       "type": "package",

@@ -7,7 +7,7 @@
              BackgroundColor="Maroon">
     
     <ContentPage.Content>
-        <Grid BackgroundColor="Maroon">
+        <Grid >
 
             <Grid Grid.Row="1" Margin="20,0,20,0">
                 <Grid.RowDefinitions>

@@ -15,12 +15,11 @@ namespace SchoolFinder.ViewModels
     public class ApplicationStatusPageViewModel : ViewModelBase
     {
         private readonly IDataBase _database;
-        private INavigationService _navigationService;
+       
 
 
         public ApplicationStatusPageViewModel(INavigationService navigationService, IDataBase database, IPageDialogService pageDialogService) : base(navigationService, pageDialogService )
         {
-            _navigationService = navigationService;
             _database = database;
             PageDialogService = pageDialogService;
         }
@@ -38,7 +37,7 @@ namespace SchoolFinder.ViewModels
         public DelegateCommand SubmitCommand =>
             _submitCommand ?? (_submitCommand = new DelegateCommand(ExcuteSubmitCommand));
 
-        public IPageDialogService PageDialogService { get; }
+        public new IPageDialogService PageDialogService { get; }
 
         public StudentDetails StudentInfo;
         async void ExcuteSubmitCommand()

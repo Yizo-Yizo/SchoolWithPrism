@@ -13,11 +13,11 @@ namespace SchoolFinder.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-        private IDatabase _database;
+       // private IDatabase _database;
 
-        private DelegateCommand _loginCommand;
+       /* private DelegateCommand _loginCommand;
         private DelegateCommand LoginCommand =>
-            _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
+            _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));*/
 
         public LoginPageViewModel(INavigationService navigation, IPageDialogService pageDialogService) : base(navigation, pageDialogService)
         {

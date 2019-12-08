@@ -13,7 +13,7 @@ namespace SchoolFinder.ViewModels
 {
     public class SignUpPageViewModel : ViewModelBase
     {
-        private IDatabase _database;
+      //  private IDatabase _database;
 
         private DelegateCommand _signUpCommand;
         private DelegateCommand SignUpCommand =>

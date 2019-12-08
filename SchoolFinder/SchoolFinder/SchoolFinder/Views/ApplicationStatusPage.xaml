@@ -9,7 +9,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
-        <ToolbarItem Text="Post" Command="{Binding SubmitCommand.}"/>
+        <ToolbarItem Text="Post" Command="{Binding SubmitCommand}"/>
     </ContentPage.ToolbarItems>
 
     <StackLayout Padding="20" Spacing="0">
