@@ -2,21 +2,27 @@
 using Prism.Commands;
 using Prism.Navigation;
 using SchoolFinder.Models;
+using SchoolFinder.Service.Interfaces;
 
 namespace SchoolFinder.ViewModels
 {
     public class ApplicationFormPageViewModel : ViewModelBase
     {
-        private IDatabase _database;
-        public ApplicationFormPageViewModel(INavigationService navigationService, IDatabase database) : base(navigationService)
+        private readonly IDataBase _database;
+        public ApplicationFormPageViewModel(INavigationService navigationService, IDataBase database) : base(navigationService)
         {
-
+            _navigationService = navigationService;
             _database = database;
         }
         private DelegateCommand _saveCommand;
         public DelegateCommand SaveCommand =>
             _saveCommand ?? (_saveCommand = new DelegateCommand(ExecuteSaveCommand));
 
+        private DelegateCommand _navigationCommand;
+        private INavigationService _navigationService;
+
+        public DelegateCommand NavigationCommand =>
+            _navigationCommand ?? (_navigationCommand = new DelegateCommand(ExcuteNavigationCommand));
         private StudentDetails _studentInfo;
        
 
@@ -29,9 +35,13 @@ namespace SchoolFinder.ViewModels
         {
             await _database.SaveStudentDetails(StudentInfo);
 
-            StudentInformation();
-
             await NavigationService.NavigateAsync("ApplicationStatusPage");
         }
+
+        async void ExcuteNavigationCommand()
+        {
+            await NavigationService.NavigateAsync("LoginPage");
+        }
+
     }
 }

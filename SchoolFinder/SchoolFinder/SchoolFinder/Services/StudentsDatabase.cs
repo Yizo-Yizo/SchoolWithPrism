@@ -71,5 +71,17 @@ namespace SchoolFinder.Service
         {
             throw new NotImplementedException();
         }
+
+        public async Task<string> SavedStudentDetails(StudentDetails studentDetails)
+        {
+
+            var Saved = await database.InsertAsync(studentDetails);
+            return Saved.ToString();
+        }
+
+        public Task SavedStudentDetails(string savedDetails)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
