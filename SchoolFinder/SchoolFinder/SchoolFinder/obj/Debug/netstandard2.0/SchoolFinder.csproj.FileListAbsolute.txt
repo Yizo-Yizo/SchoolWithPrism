@@ -14,3 +14,4 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\nets
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\XamlC.stamp
