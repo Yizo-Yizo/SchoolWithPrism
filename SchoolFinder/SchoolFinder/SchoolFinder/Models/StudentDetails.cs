@@ -25,5 +25,7 @@ namespace SchoolFinder.Models
 
         [MaxLength(10)]
         public int ParentsPhoneNO { get; set; }
+
+        public string ApplicationStatus { get; set; }
     }
 }

@@ -573,3 +573,4 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Resources.ResourceManager.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\resourcecache.stamp

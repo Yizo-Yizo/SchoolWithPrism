@@ -3,10 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.ApplicationStatusPage">
+             x:Class="SchoolFinder.Views.ApplicationStatusPage"
+             Title="Check Status"
+             IconImageSource="appliation status.png">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
+        <ToolbarItem Text="Post" Command="{Binding SubmitCommand.}"/>
     </ContentPage.ToolbarItems>
+
+    <StackLayout Padding="20" Spacing="0">
+        <Frame BackgroundColor="Green" BorderColor="White" Padding="0">
+            <Grid Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3"/>
+                    <ColumnDefinition Width="3"/>
+                    <ColumnDefinition Width="3"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Margin="10,0,10,0" Text="Name" VerticalOptions="Center" Grid.Column="0"/>
+                <Label Margin="10,0,10,0" Text="Last Name" VerticalOptions="Center" Grid.Column="1"/>
+                <Label Margin="10,0,10,0" Text="Application Status" VerticalOptions="Center" Grid.Column="0"/>
+
+                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+            </Grid>
+        </Frame>
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="0">
+                            <Grid Padding="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3"/>
+                                    <ColumnDefinition Width="3"/>
+                                    <ColumnDefinition Width="3"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Margin="10,0,10,0" Text="{Binding NameOfApplicant}" VerticalOptions="Center" Grid.Column="0"/>
+                                <Label Margin="10,0,10,0" Text="{Binding LastName}" VerticalOptions="Center" Grid.Column="1"/>
+                                <Label Margin="10,0,10,0" Text="{Binding ApplicationStatus}" VerticalOptions="Center" Grid.Column="2"/>
+
+                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                            </Grid>
+                        </Frame>
+                        
+                    </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
 </ContentPage>

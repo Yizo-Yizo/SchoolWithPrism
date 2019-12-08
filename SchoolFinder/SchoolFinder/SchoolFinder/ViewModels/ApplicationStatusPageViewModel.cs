@@ -2,6 +2,7 @@
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using SchoolFinder.Models;
 using SchoolFinder.Service.Interfaces;
 using System;
@@ -17,10 +18,11 @@ namespace SchoolFinder.ViewModels
         private INavigationService _navigationService;
 
 
-        public ApplicationStatusPageViewModel(INavigationService navigationService, IDataBase database) : base(navigationService)
+        public ApplicationStatusPageViewModel(INavigationService navigationService, IDataBase database, IPageDialogService pageDialogService) : base(navigationService, pageDialogService )
         {
             _navigationService = navigationService;
             _database = database;
+            PageDialogService = pageDialogService;
         }
 
         private DelegateCommand _navigationCommand;
@@ -36,6 +38,8 @@ namespace SchoolFinder.ViewModels
         public DelegateCommand SubmitCommand =>
             _submitCommand ?? (_submitCommand = new DelegateCommand(ExcuteSubmitCommand));
 
+        public IPageDialogService PageDialogService { get; }
+
         public StudentDetails StudentInfo;
         async void ExcuteSubmitCommand()
         {
@@ -46,24 +50,23 @@ namespace SchoolFinder.ViewModels
 
             try
             {
-                foreach (StudentDetails Saved in SavedDetails)
-                {
+                
 
-                    var json = JsonConvert.SerializeObject(unPosted);
+                    var json = JsonConvert.SerializeObject(SavedDetails);
                     var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
                     var response = await client.PostAsync(url, content);
 
-                    unPosted.Posted = true;
-
-                    await App.Database.SaveItemAsync(unPosted);
-                }
+                await _database.SavedStudentDetails(SavedDetails);
+                
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Exception", ex.Message, "OK");
+                await PageDialogService.DisplayAlertAsync("Exception", ex.Message, "OK");
 
 
             }
+
+            await PageDialogService.DisplayAlertAsync("Submition Successfull", "Your Application has been submitted", "Okay", "Cancel");
         }
     }
 }

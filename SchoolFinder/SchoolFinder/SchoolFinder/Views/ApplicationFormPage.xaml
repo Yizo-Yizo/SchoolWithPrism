@@ -48,7 +48,7 @@
 
                     <Button Text="Save" Command="{Binding ExecuteSaveCommand}" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15"/>
 
-                    <Button Text="Cancel" Clicked="OnCancelClicked"  BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15" />
+                    <Button Text="Cancel" Command="{Binding NavigationCommand}" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15" />
 
                 </StackLayout>
             </ScrollView>

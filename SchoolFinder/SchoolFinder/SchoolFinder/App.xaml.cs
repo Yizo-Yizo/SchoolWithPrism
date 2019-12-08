@@ -1,5 +1,7 @@
 ﻿using Prism;
 using Prism.Ioc;
+using SchoolFinder.Service;
+using SchoolFinder.Service.Interfaces;
 using SchoolFinder.ViewModels;
 using SchoolFinder.Views;
 using Xamarin.Forms;
@@ -36,7 +38,7 @@ namespace SchoolFinder
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
             containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
-            containerRegistry.RegisterSingleton<IDatabase, StudentssDatabase>();
+            containerRegistry.RegisterSingleton<IDataBase, StudentsDatabase>();
 
         }
     }
