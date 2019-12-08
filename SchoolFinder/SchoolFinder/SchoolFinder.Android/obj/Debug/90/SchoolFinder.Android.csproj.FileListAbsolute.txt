@@ -58,9 +58,6 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\layout\tabbar.xml
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\layout\toolbar.xml
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\values\styles.xml
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\logo.jpg
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\fb.jpg
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\applicationstatus.png
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\uploadflags.txt
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
@@ -528,3 +525,7 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\logo.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\fb.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\applicationstatus.png

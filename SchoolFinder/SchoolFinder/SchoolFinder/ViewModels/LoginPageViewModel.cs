@@ -15,9 +15,9 @@ namespace SchoolFinder.ViewModels
     {
        // private IDatabase _database;
 
-       /* private DelegateCommand _loginCommand;
+        private DelegateCommand _loginCommand;
         private DelegateCommand LoginCommand =>
-            _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));*/
+            _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
 
         public LoginPageViewModel(INavigationService navigation, IPageDialogService pageDialogService) : base(navigation, pageDialogService)
         {
@@ -43,6 +43,17 @@ namespace SchoolFinder.ViewModels
             {
                 await PageDialogService.DisplayAlertAsync("Login failed", "Username or Password is incorrect or not exists", "Okay", "Cancel");
             }
+
+            await NavigationService.NavigateAsync("AboutPage");
+        }
+
+        private DelegateCommand _registerCommand;
+        private DelegateCommand RegisterCommand =>
+            _registerCommand ?? (_registerCommand = new DelegateCommand(ExecuteRegisterCommand));
+
+         async void ExecuteRegisterCommand()
+        {
+            await NavigationService.NavigateAsync("SignUpPage");
         }
     }
 }

@@ -17,7 +17,7 @@ namespace SchoolFinder.Service
 {
     internal class StudentsDatabase : IDataBase
     {
-        private SQLiteAsyncConnection database;
+        private readonly SQLiteAsyncConnection database;
 
         public StudentsDatabase()
         {
@@ -57,20 +57,6 @@ namespace SchoolFinder.Service
 
         }
 
-        public int SaveChanges(IList<IUpdateEntry> entries)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> SaveChangesAsync(IList<IUpdateEntry> entries, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Func<QueryContext, TResult> CompileQuery<TResult>(Expression query, bool async)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<string> SavedStudentDetails(StudentDetails studentDetails)
         {

@@ -97,13 +97,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\logo.jpg" />
+    <AndroidResource Include="Resources\drawable\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\fb.jpg" />
+    <AndroidResource Include="Resources\drawable\fb.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\applicationstatus.png" />
+    <AndroidResource Include="Resources\drawable\applicationstatus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
