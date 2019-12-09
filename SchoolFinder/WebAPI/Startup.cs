@@ -29,7 +29,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SchoolFinderContext>(opt =>
-              opt.UseSqlServer("Stundent Details")); 
+              opt.UseSqlServer(Configuration.GetConnectionString("StudentDetails"))); 
             services.AddControllers();
         }
 

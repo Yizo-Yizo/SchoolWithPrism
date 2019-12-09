@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.ApplicationFormPage">
+             x:Class="SchoolFinder.Views.ApplicationFormPage" BackgroundImageSource="fifth.jpg">
 
     <ContentPage.Content>
         <StackLayout>
@@ -21,7 +21,7 @@
                     <Label Text="Name of Applicant" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
                     <Editor Placeholder="Enter Name" Text="{Binding NameOfApplicant}" />
 
-                    <Label Text="Name of Applicant" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Last Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
                     <Editor Placeholder="Enter Last Name" Text="{Binding LastName}" />
 
                     <Label Text="Name of Parent" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
@@ -46,9 +46,13 @@
                     <Label Text="Parents Phone Number" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
                     <Editor Placeholder="Enter Phone Number" Text="{Binding NameOfParent}" />
 
-                    <Button Text="Save" Command="{Binding ExecuteSaveCommand}" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15"/>
+                    <Button Text="Save" Command="{Binding ExecuteSaveCommand}" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5"/>
 
-                    <Button Text="Cancel" Command="{Binding NavigationCommand}" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="15" />
+                    <Button Text="Cancel" Command="{Binding NavigationCommand}" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" />
 
                 </StackLayout>
             </ScrollView>

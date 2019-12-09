@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SchoolFinder.Views.ApplicationStatusPage"
              Title="Check Status"
-             IconImageSource="appliationstatus.png">
+             IconImageSource="appliationstatus.png" BackgroundImageSource="second">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
@@ -16,18 +16,22 @@
         <Frame BackgroundColor="Green" BorderColor="White" Padding="0">
             <Grid Padding="0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="3"/>
-                    <ColumnDefinition Width="3"/>
-                    <ColumnDefinition Width="3"/>
+                    <ColumnDefinition Width="2.5"/>
+                    <ColumnDefinition Width="2.5"/>
+                    <ColumnDefinition Width="2.5"/>
+                    <ColumnDefinition Width="2.5"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Margin="10,0,10,0" Text="Name" VerticalOptions="Center" Grid.Column="0"/>
-                <Label Margin="10,0,10,0" Text="Last Name" VerticalOptions="Center" Grid.Column="1"/>
-                <Label Margin="10,0,10,0" Text="Application Status" VerticalOptions="Center" Grid.Column="0"/>
+                <Label Margin="10,0,10,0" Text="ID" VerticalOptions="Center" Grid.Column="0"/>
+                <Label Margin="10,0,10,0" Text="Name" VerticalOptions="Center" Grid.Column="1"/>
+                <Label Margin="10,0,10,0" Text="Last Name" VerticalOptions="Center" Grid.Column="2"/>
+                <Label Margin="10,0,10,0" Text="Application Status" VerticalOptions="Center" Grid.Column="3"/>
 
                 <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
                 <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
                 <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+
             </Grid>
         </Frame>
         <ListView>
@@ -37,18 +41,22 @@
                         <Frame Padding="0">
                             <Grid Padding="0">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="3"/>
-                                    <ColumnDefinition Width="3"/>
-                                    <ColumnDefinition Width="3"/>
+                                    <ColumnDefinition Width="2.5"/>
+                                    <ColumnDefinition Width="2.5"/>
+                                    <ColumnDefinition Width="2.5"/>
+                                    <ColumnDefinition Width="2.5"/>
                                 </Grid.ColumnDefinitions>
-
-                                <Label Margin="10,0,10,0" Text="{Binding NameOfApplicant}" VerticalOptions="Center" Grid.Column="0"/>
-                                <Label Margin="10,0,10,0" Text="{Binding LastName}" VerticalOptions="Center" Grid.Column="1"/>
-                                <Label Margin="10,0,10,0" Text="{Binding ApplicationStatus}" VerticalOptions="Center" Grid.Column="2"/>
+                                
+                                <Label Margin="10,0,10,0" Text="{Binding ID}" VerticalOptions="Center" Grid.Column="0"/>
+                                <Label Margin="10,0,10,0" Text="{Binding NameOfApplicant}" VerticalOptions="Center" Grid.Column="1"/>
+                                <Label Margin="10,0,10,0" Text="{Binding LastName}" VerticalOptions="Center" Grid.Column="2"/>
+                                <Label Margin="10,0,10,0" Text="{Binding ApplicationStatus}" VerticalOptions="Center" Grid.Column="3"/>
 
                                 <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
                                 <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
                                 <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="3" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+
                             </Grid>
                         </Frame>
                         

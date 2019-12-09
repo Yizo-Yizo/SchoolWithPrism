@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SchoolFinder.ServiceHandler
 {
-    class LoginService
+    public class LoginService
     {
         RestClient<User> _restClient = new RestClient<User>();
         public async Task<bool> CheckLoginIfExists(string email, string password)
         {
-            var check = await _restClient.checkLogin(email, password);
+            var check = await _restClient.CheckLogin(email, password);
             return check;
         }
     }

@@ -8,18 +8,20 @@ namespace SchoolFinder.ViewModels
 {
     public class ApplicationFormPageViewModel : ViewModelBase
     {
-        private readonly IDataBase _database;
+        
         public ApplicationFormPageViewModel(INavigationService navigationService, IDataBase database) : base(navigationService)
         {
             _navigationService = navigationService;
             _database = database;
         }
+        private readonly INavigationService _navigationService;
+
         private DelegateCommand _saveCommand;
         public DelegateCommand SaveCommand =>
             _saveCommand ?? (_saveCommand = new DelegateCommand(ExecuteSaveCommand));
 
         private DelegateCommand _navigationCommand;
-        private INavigationService _navigationService;
+        private readonly IDataBase _database;
 
         public DelegateCommand NavigationCommand =>
             _navigationCommand ?? (_navigationCommand = new DelegateCommand(ExcuteNavigationCommand));
@@ -40,7 +42,7 @@ namespace SchoolFinder.ViewModels
 
         async void ExcuteNavigationCommand()
         {
-            await NavigationService.NavigateAsync("LoginPage");
+            await NavigationService.NavigateAsync("AboutPage");
         }
 
     }

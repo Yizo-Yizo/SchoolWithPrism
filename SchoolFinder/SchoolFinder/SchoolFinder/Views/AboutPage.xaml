@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.AboutPage" Title="About">
+             x:Class="SchoolFinder.Views.AboutPage" Title="About" BackgroundImageSource="logo.jpg" >
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
@@ -12,8 +12,30 @@
     <ContentPage.Content>
 
         <StackLayout>
+            <Label Text="Welcome to Uxolo High School"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+            <ScrollView VerticalOptions="FillAndExpand"
+                    Margin="10">
 
-            <Button Text="Apply Here" Command="{Binding NavigateCommand}" />
+                <Label Text=
+"Uxolo High School is a public secondary school located at Bathandwa Ndodo Road.
+It is one of the public secondary schools in urban Khayelitsha-Makhaya suburb, 
+City Of Cape Town in Western Cape Province, South Africa.
+It is a Section 21 school with ABE functions and classified under quintile 3 as a no fee institution.
+In the year 2016, the school had 801 learners served by 29 teachers, with a student teacher ratio of 28:1
+The schools EMIS number is 106041339 and postal address at P O Box 275, Khayelitsha, 7784.
+The data courtesy of South Africa Department of Basic Education, Quarter 3 of December 2016,
+for any correction and update, kindly contact the webmaster. For more information and analysis kindly visit the
+ Department of Basic Education website at www.education.gov.za"
+
+                FontSize="Large" TextColor="Black" FontAttributes="Bold" />
+            </ScrollView>
+            <Button Text="Apply Here" Command="{Binding NavigateCommand}" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" />
         </StackLayout>
     </ContentPage.Content>
 

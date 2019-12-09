@@ -6,17 +6,24 @@
              x:Class="SchoolFinder.Views.SignUpPage">
   <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
-            <Label Text="First Name" />
+            <Label Text="First Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
             <Entry  Placeholder="Enter First Name" Text="{Binding FirstName}" />
-            <Label Text="Last Name" />
+            
+            <Label Text="Last Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
             <Entry  Placeholder="Enter Last Name" Text="{Binding LastName}" />
-            <Label Text="Email" />
+
+            <Label Text="Email" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
             <Entry  Placeholder="Enter Email" Text="{Binding Email}" />
-            <Label Text="Password" />
+
+            <Label Text="Password" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
             <Entry Placeholder="Enter Password" Text="{Binding Password}" />
-            <Label Text="Confirm Password" />
+
+            <Label Text="Confirm Password" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
             <Entry Placeholder="Confirm Password" Text="{Binding ConfirmPassword}" />
-            <Button Text="Sign Up" Command="{Binding ExecuteLoginCommand}" />
+
+            <Button Text="Sign Up" Command="{Binding ExecuteSignUpCommand}" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" />
             <Label x:Name="messageLabel" />
         </StackLayout>
     </ContentPage.Content>

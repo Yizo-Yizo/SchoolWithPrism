@@ -8,26 +8,30 @@ using SchoolFinder.ServiceHandler;
 using static System.Net.Mime.MediaTypeNames;
 using Prism.Services;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using SchoolFinder.Service.Interfaces;
 
 namespace SchoolFinder.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-       // private IDatabase _database;
+       // private readonly IDatabase _database;
+        public LoginPageViewModel(INavigationService navigationService, IDataBase database, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
+        {
+          //  _navigationService = navigationService;
+          //  _pageDialogService = pageDialogService;
+        }
+        
+       // private readonly INavigationService _navigationService;
+       // private readonly IPageDialogService _pageDialogService;
 
         private DelegateCommand _loginCommand;
-        private DelegateCommand LoginCommand =>
+        public DelegateCommand LoginCommand =>
             _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
-
-        public LoginPageViewModel(INavigationService navigation, IPageDialogService pageDialogService) : base(navigation, pageDialogService)
-        {
-            
-        }
 
         public Command Email { get; set; }
         public Command Password { get; set; }
         
-        private async void ExecuteLoginCommand()
+         async void ExecuteLoginCommand()
         {
             LoginService service = new LoginService();
             var getLoginDetails = await service.CheckLoginIfExists(Email, Password);
@@ -48,12 +52,13 @@ namespace SchoolFinder.ViewModels
         }
 
         private DelegateCommand _registerCommand;
-        private DelegateCommand RegisterCommand =>
+
+        public DelegateCommand RegisterCommand =>
             _registerCommand ?? (_registerCommand = new DelegateCommand(ExecuteRegisterCommand));
 
-         async void ExecuteRegisterCommand()
+        async void ExecuteRegisterCommand()
         {
-            await NavigationService.NavigateAsync("SignUpPage");
+            await _navigationService.NavigateAsync("SignUpPage");
         }
     }
 }

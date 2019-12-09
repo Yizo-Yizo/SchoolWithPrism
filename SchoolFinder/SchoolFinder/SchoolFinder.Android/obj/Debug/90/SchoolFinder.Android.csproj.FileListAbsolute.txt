@@ -529,3 +529,11 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\De
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\logo.jpg
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\fb.jpg
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\applicationstatus.png
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\fifth.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\about.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\contact.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\first.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\fourth.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\second.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\third.jpg
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder.Android\obj\Debug\90\res\drawable\background.jpg
