@@ -9,7 +9,7 @@ namespace SchoolFinder.ServiceHandler
 {
     public class LoginService
     {
-        RestClient<User> _restClient = new RestClient<User>();
+        readonly RestClient<User> _restClient = new RestClient<User>();
         public async Task<bool> CheckLoginIfExists(string email, string password)
         {
             var check = await _restClient.CheckLogin(email, password);

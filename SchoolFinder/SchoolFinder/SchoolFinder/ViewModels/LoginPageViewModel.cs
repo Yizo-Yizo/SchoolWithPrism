@@ -14,15 +14,11 @@ namespace SchoolFinder.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-       // private readonly IDatabase _database;
-        public LoginPageViewModel(INavigationService navigationService, IDataBase database, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
+       
+        public LoginPageViewModel(INavigationService navigationService,IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
-          //  _navigationService = navigationService;
-          //  _pageDialogService = pageDialogService;
+          
         }
-        
-       // private readonly INavigationService _navigationService;
-       // private readonly IPageDialogService _pageDialogService;
 
         private DelegateCommand _loginCommand;
         public DelegateCommand LoginCommand =>
@@ -58,7 +54,7 @@ namespace SchoolFinder.ViewModels
 
         async void ExecuteRegisterCommand()
         {
-            await _navigationService.NavigateAsync("SignUpPage");
+            await NavigationService.NavigateAsync("SignUpPage");
         }
     }
 }

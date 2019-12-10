@@ -11,10 +11,9 @@ namespace SchoolFinder.ViewModels
         
         public ApplicationFormPageViewModel(INavigationService navigationService, IDataBase database) : base(navigationService)
         {
-            _navigationService = navigationService;
-            _database = database;
+           
         }
-        private readonly INavigationService _navigationService;
+       
 
         private DelegateCommand _saveCommand;
         public DelegateCommand SaveCommand =>

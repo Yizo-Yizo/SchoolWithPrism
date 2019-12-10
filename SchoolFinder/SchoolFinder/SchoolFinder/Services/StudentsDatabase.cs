@@ -15,7 +15,7 @@ using IDataBase = SchoolFinder.Service.Interfaces.IDataBase;
 
 namespace SchoolFinder.Service
 {
-    internal class StudentsDatabase : IDataBase
+    public class StudentsDatabase : IDataBase
     {
         private readonly SQLiteAsyncConnection database;
 

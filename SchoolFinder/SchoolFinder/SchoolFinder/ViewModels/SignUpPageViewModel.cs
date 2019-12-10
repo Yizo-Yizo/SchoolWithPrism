@@ -15,17 +15,8 @@ namespace SchoolFinder.ViewModels
     {
         public SignUpPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
-           // _navigationService = navigationService;
-           // _pageDialogService = pageDialogService;
-         //   _database = database;
+           
         }
-
-    //    private readonly object database;
-         // private IDatabase _database;
-
-        
-       // private readonly INavigationService _navigationService;
-      //  private readonly IPageDialogService _pageDialogService;
 
         public Command FirstName { get; set; }
         public Command LastName { get; set; }
