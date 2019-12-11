@@ -11,7 +11,7 @@ namespace SchoolFinder.ViewModels
         
         public ApplicationFormPageViewModel(INavigationService navigationService, IDataBase database) : base(navigationService)
         {
-           
+            _database = database;
         }
        
 
@@ -32,7 +32,7 @@ namespace SchoolFinder.ViewModels
             get { return _studentInfo; }
             set { SetProperty(ref _studentInfo, value); }
         }
-        private async void ExecuteSaveCommand()
+        async void ExecuteSaveCommand()
         {
             await _database.SaveStudentDetails(StudentInfo);
 

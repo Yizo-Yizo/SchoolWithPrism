@@ -1,7 +1,6 @@
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\bin\Debug\netstandard2.0\SchoolFinder.deps.json
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\bin\Debug\netstandard2.0\SchoolFinder.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\bin\Debug\netstandard2.0\SchoolFinder.pdb
-C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\SchoolFinder.csprojAssemblyReference.cache
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\Views\ApplicationFormPage.xaml.g.cs
