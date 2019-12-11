@@ -3,10 +3,13 @@ using System.Threading.Tasks;
 
 namespace SchoolFinder.Service.Interfaces
 {
-    public interface IDataBase
+    public interface IDatabase
     {
-        Task<int> SaveStudentDetails(StudentDetails studentDetails);
-        Task<string> SavedStudentDetails(StudentDetails studentDetails);
-        Task SavedStudentDetails(string savedDetails);
+        Task<int> SaveUserAsync(StudentDetails studentDetails);
+
+        Task<int> SaveUserAsync(User user);
+
+        Task<int> SaveStudentDetailsAsync(StudentDetails studentDetails);
+        Task SaveStudentDetailsAsync(int savedDetails);
     }
 }

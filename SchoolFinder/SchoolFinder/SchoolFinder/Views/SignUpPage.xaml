@@ -7,19 +7,19 @@
   <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
             <Label Text="First Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-            <Entry  Placeholder="Enter First Name" Text="{Binding FirstName}" />
+            <Entry  Placeholder="Enter First Name" Text="{Binding CurrentUser.FirstName}" />
             
             <Label Text="Last Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-            <Entry  Placeholder="Enter Last Name" Text="{Binding LastName}" />
+            <Entry  Placeholder="Enter Last Name" Text="{Binding CurrentUser.LastName}" />
 
             <Label Text="Email" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-            <Entry  Placeholder="Enter Email" Text="{Binding Email}" />
+            <Entry  Placeholder="Enter Email" Text="{Binding CurrentUser.Email}" />
 
             <Label Text="Password" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-            <Entry Placeholder="Enter Password" Text="{Binding Password}" />
+            <Entry Placeholder="Enter Password" Text="{Binding CurrentUser.Password}" />
 
             <Label Text="Confirm Password" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-            <Entry Placeholder="Confirm Password" Text="{Binding ConfirmPassword}" />
+            <Entry Placeholder="Confirm Password" Text="{Binding CurrentUser.ConfirmPassword}" />
 
             <Button Text="Sign Up" Command="{Binding ExecuteSignUpCommand}" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  

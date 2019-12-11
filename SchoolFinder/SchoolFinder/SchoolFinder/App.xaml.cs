@@ -25,12 +25,12 @@ namespace SchoolFinder
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/LoginPage");
+            await NavigationService.NavigateAsync("NavigationPage/ApplicationFormPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterSingleton<IDataBase, StudentsDatabase>();
+            containerRegistry.RegisterSingleton<IDatabase, StudentsDatabase>();
             
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
@@ -40,7 +40,7 @@ namespace SchoolFinder
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
             containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
-            containerRegistry.RegisterSingleton<IDataBase, StudentsDatabase>();
+            containerRegistry.RegisterSingleton<IDatabase, StudentsDatabase>();
 
         }
     }

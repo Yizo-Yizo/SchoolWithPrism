@@ -14,3 +14,4 @@ C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\nets
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\SchoolFinder.dll
 C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\SchoolFinder.pdb
+C:\Xamarin\SchoolWithPrism\SchoolFinder\SchoolFinder\SchoolFinder\obj\Debug\netstandard2.0\SchoolFinder.csprojAssemblyReference.cache

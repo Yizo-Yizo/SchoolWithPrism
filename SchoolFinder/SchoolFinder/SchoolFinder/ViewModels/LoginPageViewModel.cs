@@ -9,6 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 using Prism.Services;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using SchoolFinder.Service.Interfaces;
+using SchoolFinder.Models;
 
 namespace SchoolFinder.ViewModels
 {
@@ -17,25 +18,34 @@ namespace SchoolFinder.ViewModels
        
         public LoginPageViewModel(INavigationService navigationService,IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
-          
+            CurrentUser = new User();
         }
+
+        private readonly Service.Interfaces.IDatabase _database;
+        private User _user;
+
+        public User CurrentUser
+        {
+            get { return _user; }
+            set { SetProperty(ref _user, value); }
+        }
+
+        
 
         private DelegateCommand _loginCommand;
         public DelegateCommand LoginCommand =>
             _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
-
-        public Command Email { get; set; }
-        public Command Password { get; set; }
         
          async void ExecuteLoginCommand()
         {
+            await _database.SaveUserAsync(CurrentUser);
             LoginService service = new LoginService();
-            var getLoginDetails = await service.CheckLoginIfExists(Email, Password);
+            var getLoginDetails = await service.CheckLoginIfExists(CurrentUser.Email, CurrentUser.Password);
             if (getLoginDetails)
             {
                  await PageDialogService.DisplayAlertAsync("Login Successfull", "Username or Password is correct", "Okay", "Cancel");
             }
-            else if (Email == null && Password == null)
+            else if (CurrentUser.Email == null && CurrentUser.Password == null)
             {
                 await PageDialogService.DisplayAlertAsync("Login failed", "Enter your Email and Password before login", "Okay", "Cancel");
             }

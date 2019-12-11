@@ -14,11 +14,11 @@ namespace SchoolFinder.ViewModels
 {
     public class ApplicationStatusPageViewModel : ViewModelBase
     {
-        private readonly IDataBase _database;
+        private readonly IDatabase _database;
        
 
 
-        public ApplicationStatusPageViewModel(INavigationService navigationService, IDataBase database, IPageDialogService pageDialogService) : base(navigationService, pageDialogService )
+        public ApplicationStatusPageViewModel(INavigationService navigationService, IDatabase database, IPageDialogService pageDialogService) : base(navigationService, pageDialogService )
         {
             _database = database;
             PageDialogService = pageDialogService;
@@ -42,7 +42,7 @@ namespace SchoolFinder.ViewModels
         public StudentDetails StudentInfo;
         async void ExcuteSubmitCommand()
         {
-            var SavedDetails = await _database.SavedStudentDetails(StudentInfo);
+            var SavedDetails = await _database.SaveStudentDetailsAsync(StudentInfo);
 
             var url = "http://10.0.2.2:44349/StudentDetails";
             var client = new HttpClient();
@@ -55,7 +55,7 @@ namespace SchoolFinder.ViewModels
                     var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
                     var response = await client.PostAsync(url, content);
 
-                await _database.SavedStudentDetails(SavedDetails);
+                await _database.SaveStudentDetailsAsync(SavedDetails);
                 
             }
             catch (Exception ex)

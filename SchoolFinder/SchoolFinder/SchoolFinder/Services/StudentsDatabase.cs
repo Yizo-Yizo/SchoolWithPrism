@@ -11,35 +11,33 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using SchoolFinder.Service.Interfaces;
-using IDataBase = SchoolFinder.Service.Interfaces.IDataBase;
+using IDatabase = SchoolFinder.Service.Interfaces.IDatabase;
 
 namespace SchoolFinder.Service
 {
-    public class StudentsDatabase : IDataBase
+    public class StudentsDatabase : IDatabase
     {
         private readonly SQLiteAsyncConnection database;
 
         public StudentsDatabase()
         {
-            string dbPath = GetDbPath();
+            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "products.db3");
             database = new SQLiteAsyncConnection(dbPath);
+            database.CreateTableAsync<StudentDetails>().Wait();
             
         }
 
-        private string GetDbPath()
-        {
-            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "products.db3");
-        }
+    
 
         public Task<List<StudentDetails>> GetStudents()
         {
             return database.Table<StudentDetails>().ToListAsync();
         }
 
-        public async Task<int> SaveStudentDetails(StudentDetails studentDetails)
+        public Task<int> SaveStudentDetailsAsync(StudentDetails studentDetails)
         {
 
-            return await database.InsertAsync(studentDetails);
+            return database.InsertAsync(studentDetails);
 
         }
 
@@ -57,17 +55,24 @@ namespace SchoolFinder.Service
 
         }
 
-
-        public async Task<string> SavedStudentDetails(StudentDetails studentDetails)
+        public Task<int> SaveUserAsync(StudentDetails studentDetails)
         {
-
-            var Saved = await database.InsertAsync(studentDetails);
-            return Saved.ToString();
+            return database.InsertAsync(studentDetails);
         }
 
-        public Task SavedStudentDetails(string savedDetails)
+        public Task<int> SaveUserAsync(User user)
+        {
+            return database.InsertAsync(user);
+        }
+
+        public Task SaveStudentDetailsAsync(int savedDetails)
         {
             throw new NotImplementedException();
         }
+
+        /*   public Task SavedStudentDetails(StudentDetails studentInfo)
+           {
+               throw new NotImplementedException();
+           }*/
     }
 }

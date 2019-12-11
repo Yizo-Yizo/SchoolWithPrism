@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SchoolFinder.Models
 {
-    class User
+   public class User
     {
         [PrimaryKey, AutoIncrement]
 
