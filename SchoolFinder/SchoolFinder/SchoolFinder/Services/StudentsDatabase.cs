@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Query;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore.Update;
-using SchoolFinder.Models;
+﻿using SchoolFinder.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -24,6 +21,7 @@ namespace SchoolFinder.Service
             var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "products.db3");
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<StudentDetails>().Wait();
+            database.CreateTableAsync<User>().Wait();
             
         }
 

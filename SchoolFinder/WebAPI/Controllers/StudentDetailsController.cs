@@ -28,17 +28,6 @@ namespace WebAPI.Controllers
         }
 
         // GET: api/StudentDetails/5
-        [HttpGet]
-        [Route("api/UserCredentials/email={email}/password={password}")]
-        public async Task<ActionResult<User>> UserDetailsLogin(string email, string password)
-        {
-            User login = await _context.Users.Where(x => x.Email == email && x.Password == password).SingleOrDefaultAsync();
-            if (login == null)
-            {
-                return NotFound();
-            }
-            return Ok(login);
-        }
 
         // PUT: api/StudentDetails/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
