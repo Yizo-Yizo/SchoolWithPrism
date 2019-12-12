@@ -21,7 +21,7 @@
         <Label Text="Address: Mandela Park, Cape Town, 7784" FontAttributes="Bold" FontSize="20" TextColor="Black"/>
         <Label Text="Phone: 021 811 7572" FontAttributes="Bold" FontSize="Body" TextColor="Black"/>
 
-        <Button Command="{Binding }" Text="Get Directions" TextColor="White"  
+        <Button Command="{Binding MapCommand}" Text="Get Directions" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
                     BackgroundColor="#088da5" />
     </StackLayout>
