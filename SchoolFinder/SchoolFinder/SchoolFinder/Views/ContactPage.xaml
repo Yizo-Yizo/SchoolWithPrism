@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SchoolFinder.Views.ContactPage"
              Title="Contact"
-             BackgroundImageSource="background.jpg" IconImageSource="contact.jpg">
+             BackgroundImageSource="background.jpg" IconImageSource="contact.png">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />

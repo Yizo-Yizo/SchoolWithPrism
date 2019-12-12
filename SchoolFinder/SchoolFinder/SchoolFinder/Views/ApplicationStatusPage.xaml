@@ -13,24 +13,25 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout Padding="20" Spacing="0">
-        <Frame BackgroundColor="Green" BorderColor="White" Padding="0">
+        <Label Margin="0,0,0,20" FontSize="Large" Text="Hope to see you next year" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Frame BackgroundColor="Crimson" BorderColor="White" Padding="0">
             <Grid Padding="0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2.5"/>
-                    <ColumnDefinition Width="2.5"/>
-                    <ColumnDefinition Width="2.5"/>
-                    <ColumnDefinition Width="2.5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <Label Margin="10,0,10,0" Text="ID" VerticalOptions="Center" Grid.Column="0"/>
                 <Label Margin="10,0,10,0" Text="Name" VerticalOptions="Center" Grid.Column="1"/>
                 <Label Margin="10,0,10,0" Text="Last Name" VerticalOptions="Center" Grid.Column="2"/>
-                <Label Margin="10,0,10,0" Text="Application Status" VerticalOptions="Center" Grid.Column="3"/>
+                <Label Margin="10,0,10,0" Text="Status" VerticalOptions="Center" Grid.Column="3"/>
 
-                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
 
             </Grid>
         </Frame>
@@ -39,12 +40,12 @@
                 <DataTemplate>
                     <ViewCell>
                         <Frame Padding="0">
-                            <Grid Padding="0">
+                            <Grid Padding="0" RowSpacing="0">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2.5"/>
-                                    <ColumnDefinition Width="2.5"/>
-                                    <ColumnDefinition Width="2.5"/>
-                                    <ColumnDefinition Width="2.5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 
                                 <Label Margin="10,0,10,0" Text="{Binding ID}" VerticalOptions="Center" Grid.Column="0"/>
@@ -52,10 +53,10 @@
                                 <Label Margin="10,0,10,0" Text="{Binding LastName}" VerticalOptions="Center" Grid.Column="2"/>
                                 <Label Margin="10,0,10,0" Text="{Binding ApplicationStatus}" VerticalOptions="Center" Grid.Column="3"/>
 
-                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-                                <BoxView BackgroundColor="Green" WidthRequest="1" Grid.Column="3" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="3" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
 
                             </Grid>
                         </Frame>
