@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.ApplicationFormPage" BackgroundImageSource="fifth.jpg">
+             x:Class="SchoolFinder.Views.ApplicationFormPage" BackgroundImageSource="g.jpg">
 
     <ContentPage.Content>
         <StackLayout>
@@ -18,21 +18,21 @@
               HorizontalOptions="Center"
                TextColor="DarkGreen"/>
                     
-                    <Label Text="Name of Applicant" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Name of Applicant" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Editor Placeholder="Enter Name" Text="{Binding NameOfApplicant}" />
 
-                    <Label Text="Last Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Last Name" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Editor Placeholder="Enter Last Name" Text="{Binding LastName}" />
 
-                    <Label Text="Name of Parent" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Name of Parent" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Editor Placeholder="Enter Name" Text="{Binding NameOfParent}" />
 
-                    <Label Text="Date of Birth" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Date of Birth" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <DatePicker Format="D"
                     VerticalOptions="CenterAndExpand"
                     Margin="10, 0" Date="{Binding DateOfBirth}" />
 
-                    <Label Text="Gender" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Gender" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Picker x:Name="Gender" SelectedIndex="{Binding Gender}" HorizontalOptions="FillAndExpand">
                         <Picker.Items>
                             <x:String>Male</x:String>
@@ -40,10 +40,10 @@
                         </Picker.Items>
                     </Picker>
 
-                    <Label Text="Home Address" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Home Address" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Editor Placeholder="Enter Address" Text="{Binding Address}" />
 
-                    <Label Text="Parents Phone Number" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Parents Phone Number" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Editor Placeholder="Enter Phone Number" Text="{Binding NameOfParent}" />
 
                     <Button Text="Save" Command="{Binding ExecuteSaveCommand}" TextColor="White"  

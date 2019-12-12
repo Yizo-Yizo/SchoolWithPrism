@@ -5,11 +5,11 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SchoolFinder.Views.ApplicationStatusPage"
              Title="Check Status"
-             IconImageSource="appliationstatus.png" BackgroundImageSource="second">
+             IconImageSource="applicationstatus.png" BackgroundImageSource="i.jpg">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
-        <ToolbarItem Text="Post" Command="{Binding SubmitCommand}"/>
+        <ToolbarItem Text="Submit" Command="{Binding SubmitCommand}"/>
     </ContentPage.ToolbarItems>
 
     <StackLayout Padding="20" Spacing="0">

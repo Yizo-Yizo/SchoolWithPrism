@@ -41,7 +41,7 @@ namespace SchoolFinder.ViewModels
 
         async void ExcuteNavigationCommand()
         {
-            await NavigationService.NavigateAsync("AboutPage");
+            await NavigationService.NavigateAsync("MainPage");
         }
 
     }

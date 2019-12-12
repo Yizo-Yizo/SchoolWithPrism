@@ -3298,7 +3298,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thapelo.Selebedi\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
@@ -3307,7 +3307,7 @@
       "projectUniqueName": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\SchoolFinder.iOS.csproj",
       "projectName": "SchoolFinder.iOS",
       "projectPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\SchoolFinder.iOS.csproj",
-      "packagesPath": "C:\\Users\\Thapelo.Selebedi\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Xamarin\\SchoolWithPrism\\SchoolFinder\\SchoolFinder\\SchoolFinder.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
@@ -3315,7 +3315,7 @@
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Thapelo.Selebedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

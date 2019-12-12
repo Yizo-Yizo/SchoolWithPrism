@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.AboutPage" Title="About" BackgroundImageSource="logo.jpg" >
+             x:Class="SchoolFinder.Views.AboutPage" Title="About" BackgroundImageSource="light.jpg" IconImageSource="about.jpg" >
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
@@ -17,6 +17,8 @@
                FontAttributes="Bold"
                HorizontalOptions="Center"
                TextColor="Black"/>
+
+            <Image Source="Uxolos.jpg" Aspect="AspectFill" />
             <ScrollView VerticalOptions="FillAndExpand"
                     Margin="10">
 
@@ -31,7 +33,7 @@ The data courtesy of South Africa Department of Basic Education, Quarter 3 of De
 for any correction and update, kindly contact the webmaster. For more information and analysis kindly visit the
  Department of Basic Education website at www.education.gov.za"
 
-                FontSize="Large" TextColor="Black" FontAttributes="Bold" />
+                FontSize="Medium" TextColor="Black" FontAttributes="Bold" />
             </ScrollView>
             <Button Text="Apply Here" Command="{Binding NavigateCommand}" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  

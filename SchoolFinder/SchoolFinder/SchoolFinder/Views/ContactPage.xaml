@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.ContactPage" BackgroundImageSource="background.jpg">
+             x:Class="SchoolFinder.Views.ContactPage"
+             Title="Contact"
+             BackgroundImageSource="background.jpg" IconImageSource="contact.jpg">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding NavigationCommand}" />
@@ -16,8 +18,8 @@
                HorizontalOptions="Center"
                TextColor="Black"/>
 
-        <Label Text="Address: Mandela Park, Cape Town, 7784" FontAttributes="Bold"/>
-        <Label Text="Phone: 021 811 7572"/>
+        <Label Text="Address: Mandela Park, Cape Town, 7784" FontAttributes="Bold" FontSize="20" TextColor="Black"/>
+        <Label Text="Phone: 021 811 7572" FontAttributes="Bold" FontSize="Body" TextColor="Black"/>
 
         <Button Command="{Binding }" Text="Get Directions" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  

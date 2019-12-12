@@ -25,7 +25,7 @@ namespace SchoolFinder
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/ApplicationFormPage");
+            await NavigationService.NavigateAsync("NavigationPage/LoginPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
