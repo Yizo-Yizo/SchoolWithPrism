@@ -42,6 +42,7 @@ namespace SchoolFinder.ViewModels
             LoginService service = new LoginService();
             var getLoginDetails = await service.CheckLoginIfExists(CurrentUser.Email, CurrentUser.Password);
             if (getLoginDetails)
+
             {
                  await PageDialogService.DisplayAlertAsync("Login Successfull", "Username or Password is correct", "Okay", "Cancel");
             }
