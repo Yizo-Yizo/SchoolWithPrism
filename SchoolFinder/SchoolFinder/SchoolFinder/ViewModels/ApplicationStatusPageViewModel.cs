@@ -64,8 +64,6 @@ namespace SchoolFinder.ViewModels
 
 
             }
-
-            await PageDialogService.DisplayAlertAsync("Submition Successfull", "Your Application has been submitted", "Okay", "Cancel");
             await NavigationService.NavigateAsync("MainPage");
         }
     }
