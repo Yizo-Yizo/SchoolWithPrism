@@ -19,7 +19,7 @@ namespace SchoolFinder.ViewModels
             _saveCommand ?? (_saveCommand = new DelegateCommand(ExecuteSaveCommand));
 
         private DelegateCommand _navigationCommand;
-        private readonly Service.Interfaces.IDatabase _database;
+        private readonly IDatabase _database;
 
         public DelegateCommand NavigationCommand =>
             _navigationCommand ?? (_navigationCommand = new DelegateCommand(ExcuteNavigationCommand));
@@ -31,6 +31,7 @@ namespace SchoolFinder.ViewModels
             get { return _studentInfo; }
             set { SetProperty(ref _studentInfo, value); }
         }
+        
         async void ExecuteSaveCommand()
         {
             await _database.SaveStudentDetailsAsync(StudentInfo);

@@ -45,7 +45,7 @@ namespace SchoolFinder.ViewModels
             if (CurrentUser.FirstName == null && CurrentUser.LastName == null && CurrentUser.Email == null && CurrentUser.Password == null && CurrentUser.ConfirmPassword == null)
             {
                 await PageDialogService.DisplayAlertAsync("Register Successfull", "Enter your details", "Okay", "Cancel");
-                await NavigationService.NavigateAsync("AboutPage");
+                
             }
             else if (CurrentUser.FirstName == null && CurrentUser.Password == null)
             {
@@ -54,6 +54,7 @@ namespace SchoolFinder.ViewModels
             else
             {
                 await PageDialogService.DisplayAlertAsync("Registration successful", "Enjoy", "Okay", "Cancel");
+                await NavigationService.NavigateAsync("LoginPage");
             }
         }
     }

@@ -18,7 +18,7 @@ namespace SchoolFinder.ViewModels
 
         }
 
-        private readonly Service.Interfaces.IDatabase _database;
+        private readonly IDatabase _database;
         private User _user;
 
         public User CurrentUser
@@ -41,18 +41,18 @@ namespace SchoolFinder.ViewModels
             if (getLoginDetails)
 
             {
-                 await PageDialogService.DisplayAlertAsync("Login Successfull", "Username or Password is correct", "Okay", "Cancel");
+                 await PageDialogService.DisplayAlertAsync("Login ", "Username or Password is incorrect or not exists", "Okay", "Cancel");
             }
             else if (CurrentUser.Email == null && CurrentUser.Password == null)
             {
-                await PageDialogService.DisplayAlertAsync("Login failed", "Enter your Email and Password before login", "Okay", "Cancel");
+                await PageDialogService.DisplayAlertAsync("Login Successful", "Username or Password is correct", "Okay", "Cancel");
             }
             else
             {
-                await PageDialogService.DisplayAlertAsync("Login failed", "Username or Password is incorrect or not exists", "Okay", "Cancel");
+                await PageDialogService.DisplayAlertAsync("Login failed", "Enter your Email and Password before login", "Okay", "Cancel");
             }
 
-            await NavigationService.NavigateAsync("AboutPage");
+            await NavigationService.NavigateAsync("MainPage");
         }
 
         private DelegateCommand _registerCommand;

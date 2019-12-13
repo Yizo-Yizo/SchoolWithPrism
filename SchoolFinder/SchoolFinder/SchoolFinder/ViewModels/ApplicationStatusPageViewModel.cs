@@ -44,7 +44,7 @@ namespace SchoolFinder.ViewModels
         {
             var SavedDetails = await _database.SaveStudentDetailsAsync(StudentInfo);
 
-            var url = "http://10.0.2.2:44349/StudentDetails";
+            var url = "http://10.0.2.2:44349/api/StudentDetails";
             var client = new HttpClient();
 
             try
@@ -66,6 +66,7 @@ namespace SchoolFinder.ViewModels
             }
 
             await PageDialogService.DisplayAlertAsync("Submition Successfull", "Your Application has been submitted", "Okay", "Cancel");
+            await NavigationService.NavigateAsync("MainPage");
         }
     }
 }

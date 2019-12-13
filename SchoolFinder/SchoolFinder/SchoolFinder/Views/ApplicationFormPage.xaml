@@ -46,7 +46,7 @@
                     <Label Text="Parents Phone Number" FontSize="Medium" FontAttributes="Bold" TextColor="White"/>
                     <Editor Placeholder="Enter Phone Number" Text="{Binding NameOfParent}" />
 
-                    <Button Text="Save" Command="{Binding ExecuteSaveCommand}" TextColor="White"  
+                    <Button Text="Save" Command="{Binding SaveCommand}" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
                     BackgroundColor="#088da5"/>
 
