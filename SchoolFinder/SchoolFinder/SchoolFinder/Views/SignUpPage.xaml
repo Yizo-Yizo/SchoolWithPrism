@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolFinder.Views.SignUpPage" BackgroundImageSource="front.jpg">
+             x:Class="SchoolFinder.Views.SignUpPage" BackgroundImageSource="i.jpg">
   <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
-            <Label Text="First Name" FontSize="Medium" FontAttributes="Bold" TextColor="White" />
+            <Label Text="First Name" TextColor="White" FontSize="Medium"/>
             <Entry  Placeholder="Enter First Name" Text="{Binding CurrentUser.FirstName}" TextColor="White" />
 
-            <Label Text="Last Name" FontSize="Medium" FontAttributes="Bold" TextColor="White" />
+            <Label Text="Last Name" TextColor="White" FontSize="Medium"/>
             <Entry  Placeholder="Enter Last Name" Text="{Binding CurrentUser.LastName}" TextColor="White" />
 
-            <Label Text="Email" FontSize="Medium" FontAttributes="Bold" TextColor="White" />
+            <Label Text="Email" TextColor="White" FontSize="Medium"/>
             <Entry  Placeholder="Enter Email" Text="{Binding CurrentUser.Email}" TextColor="White" />
 
-            <Label Text="Password" FontSize="Medium" FontAttributes="Bold" TextColor="White" />
+            <Label Text="Password" TextColor="White" FontSize="Medium"/>
             <Entry Placeholder="Enter Password" Text="{Binding CurrentUser.Password}" IsPassword="True" TextColor="White" />
 
-            <Label Text="Confirm Password" FontSize="Medium" FontAttributes="Bold" TextColor="White" />
+            <Label Text="Confirm Password" TextColor="White" FontSize="Medium"/>
             <Entry Placeholder="Confirm Password" Text="{Binding CurrentUser.ConfirmPassword}" IsPassword="True" TextColor="White" />
 
             <Button Text="Sign Up" Command="{Binding SignUpCommand}" TextColor="White"  
